@@ -44,13 +44,17 @@
     （8）ex和ch：ex表示字母"x"的高度，ch表示数字"0"的宽度。
     它们通常用于在垂直方向上对齐文本。例如，line-height: 1.5ex; 表示行高为字母"x"高度的1.5倍。
 */
-
+* {
+    margin: 0;
+    padding: 0;
+  }
 
 .container {
     display: flex; /* 使用flex布局 */
     width: 100wh;
     height: 100vh;
     background-color: #eee(203, 202, 201);
+    margin: 1%;
 }
 
 .box-child1 {
@@ -77,8 +81,33 @@
     .box-child2-son1{
         height: 10%;
         margin-bottom: 10px;
-        background-color: rgb(110, 122, 105)
+        background-color: rgb(110, 122, 105);
+        display: flex;
     }
+        .search-box{
+            width: 70%;
+            margin-right: 10px;
+            background-color: rgb(75, 100, 82);
+            display: flex;
+        }
+            .search{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 50px;
+                display: flex;
+                width: 400px; 
+            }
+            .searchInput{
+                width: 300px;
+                
+            }
+            
+        .userinfo{
+            width: 30%;
+            background-color: rgb(75, 100, 82);
+            
+        }
+
     .box-child2-son2{
         display: flex;
         height: 90%;
@@ -86,11 +115,27 @@
         background-color: rgb(110, 122, 105)
     }
         .box-child2-son2-son1{
-            flex: 1;
+            width: 50%;
             background-color: rgb(75, 87, 70);
             margin-right: 1%;
-            
         }
+        .box-child2-son2-son2{
+            
+            background-color: rgb(75, 87, 70);
+            width: 49%;
+        }
+
+.sidebar{
+    background-color: rgb(166, 168, 168);
+    height: 100%;
+    overflow: hidden;
+}
+.nav-item{
+    margin-left: 40px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
 
   
   

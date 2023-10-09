@@ -26,20 +26,61 @@
             "rel" 的值是 "stylesheet"，表示链接是一个样式表文件，用于定义文档的外观和样式。
     -->
     <link rel="stylesheet" href="index.css">
-</head>
+    <!--
+    npm包下载bootstrap-icons库以后可以把库搬过来用    
+    -->
+    <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
+    
 <body class="container">
     <div class="box-child1">
-        <div class="box-child1-son1">dashboad</div>
+        <div class="box-child1-son1">
+        <ul class="sidebar">
+        <li class="nav-item">
+            <a href="index.html">首页</a></li>
+        <li class="nav-item">历程</li>
+        <li class="nav-item">经验上载</li>
+        </ul>
+
+        </div>
        
         
         
     </div>
     <div class="box-child2">
-        <div class="box-child2-son1">dashboad</div>
+        <div class="box-child2-son1">
+            <div class="search-box">
+            <!--
+            <form> 元素是整个表单的容器。它定义了用户输入数据的提交方式和目标URL。
+              action 属性：action 属性指定了表单数据提交的目标URL。
+              当用户提交表单时，浏览器会将数据发送到指定的URL。
+              例如：<form action="/submit" method="POST">，表单数据将发送到 "/submit" 地址。
+              method 属性：method 属性定义了提交数据时使用的HTTP请求方法。
+              最常见的两个方法是 "GET" 和 "POST"。
+                "GET"：将表单数据附加到URL，适用于不涉及敏感信息的查询。
+                数据会显示在URL中，可见性较高。
+                "POST"：将表单数据作为HTTP请求的一部分发送，适用于包含敏感信息的情况。
+                数据不会显示在URL中，可见性较低。
+            <label> 元素用于创建标签文本，用于标识输入字段的用途。在这里，它显示为 "Search:"。
+            <input> 元素定义了实际的输入字段。它的 type 属性设置为 "search"，表示这是一个搜索输入框。
+            id 属性用于唯一标识这个输入框，name 属性为该字段定义了一个名称 "q"，以便在提交时识别这个字段。
+            placeholder 属性提供了在输入框内的默认提示文本 。    
+            -->
+                <div class="search">
+                    <input type="search" id="searchInput" name="q" placeholder="search now" class="searchInput">
+                <a class="search-button">
+                    <i class="bi bi-search" style="font-size: 2.5rem;color: aquamarine;"></i>
+                </a>
+                </div>
+            </div>
+            <div class="userinfo">
+            用户信息
+            </div>
+        
+        </div>
         
         <div class="box-child2-son2">
             <div class="box-child2-son2-son1">dashboad</div>
-            <div class="box-child2-son2-son1">dashboad</div>
+            <div class="box-child2-son2-son2">dashboad</div>
         </div>
             
     </div>
