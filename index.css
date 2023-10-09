@@ -1,0 +1,90 @@
+/* 
+1.padding:（内边距）
+    这行代码设置了盒子内部的内边距（padding）为20像素。
+    这会在盒子内容和边框之间创建一段空白区域。
+        border-margin-padding-top（距离顶部）
+        border-margin-padding-right（右）
+        border-margin-padding-bottom（底部）
+        border-margin-padding-left（左）
+2.margin:（外边距）
+    这行代码设置了盒子与其周围元素之间的外边距（margin）
+    这会在盒子外部创建一段空白区域，用于与其他元素之间的间隔
+3.border:（边框）
+    这行代码定义了一个边框.这会在盒子的外部创建一个边框。
+        border-width（边框宽度）
+        border-style（边框样式）
+            none：无边框。
+            solid：实线。
+            dashed：虚线，由一系列短线段组成。
+            dotted：点线，由一系列小点组成。
+            double：双线。
+            groove：3D凹槽效果。
+            ridge：3D脊状效果。
+            inset：3D内凹效果。
+            outset：3D外凸效果。
+        border-color（颜色）
+4.
+5.flex：（弹性）
+    属性用于控制弹性盒子（flexbox）的布局和排列。
+    flex-grow：控制弹性盒子在父容器中分配额外空间的能力。
+    flex-shrink：定义了弹性盒子在空间不足时如何缩小。默认值为1，表示等比例缩小，值越大，缩小得越多。
+    flex-basis：指定了弹性盒子在没有伸缩空间分配时的基础尺寸。可以设置为固定值（如像素）或百分比。
+6.度量单位：
+    （1）像素（px）：像素是最常用的度量单位之一。
+    （2）百分比（%）：百分比是相对于父元素的度量单位。
+    （3）em：em是相对于父元素的字体尺寸的度量单位。默认情况下，1em等于父元素的字体大小。
+    （4）rem：rem是相对于根元素（通常是 <html> 元素）的字体尺寸的度量单位。与em不同，rem不受父元素字体大小的影响。
+    例如，如果根元素的字体大小为16像素，则font-size: 1.5rem; 表示字体大小为24像素（1.5乘以16）。
+    （5）vh和vw：
+    vh表示视口高度的百分比，vw表示视口宽度的百分比。
+    视口指的是浏览器窗口的大小。例如，height: 50vh; 表示元素的高度为浏览器窗口高度的50%。
+    （6）pt：pt是相对于72dpi（每英寸点数）的长度单位。它通常用于打印样式表中。1pt等于1/72英寸。
+    （7）cm、mm和in：cm表示厘米，mm表示毫米，in表示英寸。
+    它们是绝对长度单位，通常用于打印样式表中。例如，width: 2cm; 表示元素的宽度为2厘米。
+    （8）ex和ch：ex表示字母"x"的高度，ch表示数字"0"的宽度。
+    它们通常用于在垂直方向上对齐文本。例如，line-height: 1.5ex; 表示行高为字母"x"高度的1.5倍。
+*/
+
+
+.container {
+    display: flex; /* 使用flex布局 */
+    width: 1600px;
+    height: 100vh;
+    background-color: #eee(203, 202, 201);
+  }
+  
+  .box-child1 {
+    display: flex;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(166, 168, 168);
+    margin-right: 24px;
+    
+    .box-child1-son1{
+        width: 100%;
+        height: 80%;
+        margin-bottom: 12px;
+        background-color: rgb(110, 122, 105);
+        
+    }
+  }
+  .box-child2 {
+    width: 1000px;
+    height: 100%;
+    background-color: rgb(174, 180, 177);
+    margin-right: 24px;
+    overflow: hidden;
+
+    .box-child2-son1{
+        height: 50%;
+        margin-bottom: 10px;
+        background-color: rgb(110, 122, 105)
+    }
+  }
+  .box-child3 {
+    width: 400px;
+    height: 100%;
+    background-color: rgb(128, 124, 128);
+    
+  }
+  
