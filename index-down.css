@@ -1,3 +1,14 @@
+/*
+(1)font-weight:字体的粗细程度
+(2)transition: .4s linear .2s
+"transition"是CSS属性，它用于指定元素在改变属性值时的过渡效果。
+".4s"是过渡的持续时间。在这个例子中，过渡将在0.4秒内完成。
+"linear"是过渡的速度曲线。它指定过渡效果以恒定的速度进行，没有加速或减速。
+".2s"是延迟时间。在这个例子中，过渡将在开始之后的0.2秒才开始执行。
+(3)"ease-in-out"使动画具有渐进放慢、中间加速、再渐进放慢的效果。
+(4)"justify-content: space-between" 是一个CSS属性，用于调整flex容器中项目之间的对齐方式和间距。
+*/
+
 .box-child2-son2-son1{
     width: 70%;
     background-color: rgb(139, 186, 193);
@@ -14,28 +25,60 @@
         /*选择框*/
     .box-grason1-up{
         width: 70%;
-        background-color: aliceblue;
+        background-color: rgb(148, 210, 215);
     }
         .box-dropdown-icon{
             
-            height: 10%;
+            height: 15%;
             margin-left: 100px;
             margin-right: 180px;
             margin-top: 10px;
             background-color: black;
             color: aliceblue;
+            padding-left: 20px;
+            padding-top: 22px;
+            border-radius: 6px;
+            font-size: large;
+            
         }
+        /*选择列表*/
         .option-list{
-           
+            
+            margin-top: 10px;
             margin-left: 100px;
-            background-color: aqua;
+            background-color: rgb(233, 241, 241);
             margin-right: 180px;
+            max-height: 120px;
+            overflow-y: auto;
+            transition: .4s linear .2s;
+            padding-left: 20px;
+            height: 0px;
+            
+            
+        }
+        .option-list.active{
+            height: 120px;
+        }
+        .option{
+            padding-top: 8px;
+            transition: .3s ease-in-out;
+        }
+        .option:hover,
+        
+        .option.selected{
+            color: aqua;
+        }
+        .option-list::-webkit-scrollbar{
+            width: 4px;
+        }
+        .option-list::-webkit-scrollbar-thumb{
+            background-color: rgb(40, 189, 197);
 
         }
     /*确认框*/
     .box-grason1-down{
         width: 30%;
-        background-color: antiquewhite;
+        background-color: rgb(47, 32, 74);
 
     }
     /*自动生成历程*/
