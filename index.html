@@ -26,12 +26,17 @@
             "rel" 的值是 "stylesheet"，表示链接是一个样式表文件，用于定义文档的外观和样式。
     -->
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index-down.css">
+    <link rel="stylesheet" href="index-up.css">
+    <link rel="stylesheet" href="index-left.css">
+    <link rel="stylesheet" href="index-right.css">
     <!--
     npm包下载bootstrap-icons库以后可以把库搬过来用    
     -->
     <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
     
 <body class="container">
+    <!--左边的盒子-->
     <div class="box-child1">
         <div class="box-child1-son1">
         <ul class="sidebar">
@@ -40,13 +45,11 @@
         <li class="nav-item">历程</li>
         <li class="nav-item">经验上载</li>
         </ul>
-
         </div>
-       
-        
-        
     </div>
+    <!--右边的盒子-->
     <div class="box-child2">
+        <!--上方的盒子-->
         <div class="box-child2-son1">
             <div class="search-box">
             <!--
@@ -65,22 +68,65 @@
             id 属性用于唯一标识这个输入框，name 属性为该字段定义了一个名称 "q"，以便在提交时识别这个字段。
             placeholder 属性提供了在输入框内的默认提示文本 。    
             -->
+            <!--输入框-->
                 <div class="search">
                     <input type="search" id="searchInput" name="q" placeholder="search now" class="searchInput">
-                <a class="search-button">
-                    <i class="bi bi-search" style="font-size: 2.5rem;color: aquamarine;"></i>
-                </a>
+            <!--输入按钮-->
+                    <a class="search-button">
+                    <i class="bi bi-search" style="font-size: 2.5rem;color:
+                     aquamarine; cursor: pointer;"></i>
+                    </a>
                 </div>
             </div>
+            <!--用户信息-->
             <div class="userinfo">
-            用户信息
+                <div class="box-img-dad">
+                <!--头像-->
+                <div class="box-img">
+                    <img src="img/gweo.jpg" alt="face" class="img">
+                    </div>
+                </div>
+                <div class="box-log-dad">
+                    <!--登录按钮-->
+                    <button class="box-log">LOG</button>
+                </div>
             </div>
         
         </div>
-        
+        <!--第二个盒子中下方的盒子-->
         <div class="box-child2-son2">
-            <div class="box-child2-son2-son1">dashboad</div>
-            <div class="box-child2-son2-son2">dashboad</div>
+            <!--子集盒子-->
+            <div class="box-child2-son2-son1">
+            <div class="box-grason1">
+                <!--选择框-->
+                <div class="box-grason1-up" style="display: flex;flex-direction: column;">
+                    <div class="box-dropdown-icon">
+                        <span class="dropdown-icon">请选择上载领域
+                            <i class="bi bi-chevron-down" style="font-size: 1.5rem;"></i>
+                        </span>
+                    </div>
+                    <div class="option-list">
+                        <div class="option">学习</div>
+                        <div class="option">生活</div>
+                        <div class="option">足球</div>
+                    </div>
+                    
+                </div>
+                <!--输入框 确认按钮-->
+                <div class="box-grason1-down">
+                    <!--输入框-->
+                    <div class="box-grason1-down-left"></div>
+                    <!--确认按钮-->
+                    <div class="box-grason1-down-right"></div>
+                </div>
+                
+                </div>
+                
+                <div class="box-grason2">自动生成历程</div> 
+            </div>  
+            <div class="box-child2-son2-son2">放一个动漫形象</div>
+            </div>
+            
         </div>
             
     </div>

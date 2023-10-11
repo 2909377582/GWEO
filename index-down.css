@@ -1,0 +1,47 @@
+.box-child2-son2-son1{
+    width: 70%;
+    background-color: rgb(139, 186, 193);
+    margin-right: 1%;
+    display: flex;
+    flex-direction: column;
+}
+    /*上载区域*/
+    .box-grason1{
+        height: 39%;
+        display: flex;
+        
+    }
+        /*选择框*/
+    .box-grason1-up{
+        width: 70%;
+        background-color: aliceblue;
+    }
+        .box-dropdown-icon{
+            
+            height: 10%;
+            margin-left: 100px;
+            margin-right: 180px;
+            margin-top: 10px;
+            background-color: black;
+            color: aliceblue;
+        }
+        .option-list{
+           
+            margin-left: 100px;
+            background-color: aqua;
+            margin-right: 180px;
+
+        }
+    /*确认框*/
+    .box-grason1-down{
+        width: 30%;
+        background-color: antiquewhite;
+
+    }
+    /*自动生成历程*/
+    .box-grason2{
+        height: 60%;
+        background-color: antiquewhite;
+        margin-top: 1%;
+    }
+    

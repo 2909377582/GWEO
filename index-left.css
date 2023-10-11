@@ -1,0 +1,17 @@
+
+.box-child1-son1{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 12px;
+    background-color: rgb(110, 122, 105);
+}
+.sidebar{
+    background-color: rgb(166, 168, 168);
+    height: 100%;
+    overflow: hidden;
+}
+.nav-item{
+    margin-left: 40px;
+    margin-top: 50px;
+    overflow: hidden;
+}
