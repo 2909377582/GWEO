@@ -24,14 +24,14 @@
     }
         /*选择框*/
     .box-grason1-up{
-        width: 70%;
+        width: 45%;
         background-color: rgb(148, 210, 215);
     }
         .box-dropdown-icon{
             
             height: 15%;
-            margin-left: 100px;
-            margin-right: 180px;
+            margin-left: 30px;
+            margin-right: 60px;
             margin-top: 10px;
             background-color: black;
             color: aliceblue;
@@ -45,9 +45,9 @@
         .option-list{
             
             margin-top: 10px;
-            margin-left: 100px;
+            margin-left: 30px;
             background-color: rgb(233, 241, 241);
-            margin-right: 180px;
+            margin-right: 60px;
             max-height: 120px;
             overflow-y: auto;
             transition: .4s linear .2s;
@@ -75,12 +75,35 @@
             background-color: rgb(40, 189, 197);
 
         }
-    /*确认框*/
-    .box-grason1-down{
-        width: 30%;
+    /*输入+确认框*/
+    .box-grason1-right{
+        width: 55%;
         background-color: rgb(47, 32, 74);
-
+        display: flex;
     }
+    .box-grason1-right-input{
+        width: 70%;
+        margin-left: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        background-color: aquamarine;
+    }
+    .box-grason1-down-submit-btn{
+        background-color: rgb(189, 189, 46);
+        width: 30%;
+    }
+    .submit-btn{
+        margin-bottom: 10px;
+        margin-top: 290px;
+    }
+    .exp-input{
+        height: 100%;
+        width: 100%;
+        resize: none;
+        font-size: 24px;
+    }
+
     /*自动生成历程*/
     .box-grason2{
         height: 60%;
