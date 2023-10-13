@@ -1,7 +1,8 @@
 .box-child2-son2-son2{
             
-    background-color: rgb(72, 88, 66);
+    background-color:rgb(190, 198, 198);
     width: 31%;
     display: flex;
     flex-direction: row;
+    border-radius: 10px;
 }

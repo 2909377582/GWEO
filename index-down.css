@@ -11,7 +11,7 @@
 
 .box-child2-son2-son1{
     width: 70%;
-    background-color: rgb(139, 186, 193);
+    background-color: rgb(255, 255, 255);
     margin-right: 1%;
     display: flex;
     flex-direction: column;
@@ -20,12 +20,15 @@
     .box-grason1{
         height: 39%;
         display: flex;
+        background-color: rgb(255, 255, 255);
         
     }
         /*选择框*/
     .box-grason1-up{
         width: 45%;
-        background-color: rgb(148, 210, 215);
+        background-color: rgb(190, 198, 198);
+        border-radius: 10px;
+        margin-right: 10px;
     }
         .box-dropdown-icon{
             
@@ -33,7 +36,7 @@
             margin-left: 30px;
             margin-right: 60px;
             margin-top: 10px;
-            background-color: black;
+            background-color: rgb(89, 156, 137);
             color: aliceblue;
             padding-left: 20px;
             padding-top: 22px;
@@ -50,7 +53,7 @@
             margin-right: 60px;
             max-height: 120px;
             overflow-y: auto;
-            transition: .4s linear .2s;
+            transition: .2s linear .2s;
             padding-left: 20px;
             height: 0px;
             
@@ -78,20 +81,21 @@
     /*输入+确认框*/
     .box-grason1-right{
         width: 55%;
-        background-color: rgb(47, 32, 74);
+        background-color: rgb(190, 198, 198);
         display: flex;
+        border-radius: 10px;
     }
     .box-grason1-right-input{
         width: 70%;
-        margin-left: 50px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         margin-right: 10px;
-        background-color: aquamarine;
     }
     .box-grason1-down-submit-btn{
-        background-color: rgb(189, 189, 46);
+        background-color: rgb(190, 198, 198);
         width: 30%;
+        margin-left: 10px;
     }
     .submit-btn{
         margin-bottom: 10px;
@@ -101,13 +105,13 @@
         height: 100%;
         width: 100%;
         resize: none;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     /*自动生成历程*/
     .box-grason2{
         height: 60%;
-        background-color: antiquewhite;
+        background-color: rgb(190, 198, 198);
         margin-top: 1%;
     }
     

@@ -53,7 +53,7 @@
     display: flex; /* 使用flex布局 */
     width: 100wh;
     height: 100vh;
-    background-color: #eee(203, 202, 201);
+    background-color: #C0C0C0(192,192,192);
     margin: 1%;
 }
 /*左侧侧边栏 */
@@ -61,14 +61,14 @@
     display: flex;
     width: 15%;
     height: 100%;
-    background-color: rgb(166, 168, 168);
+    background-color: rgb(255, 255, 255);
     margin-right: 24px;
 }
 /*右侧盒子*/
 .box-child2 {
     width: 80%;
     height: 100%;
-    background-color: rgb(174, 180, 177);
+    background-color: rgb(255, 255, 255);
     margin-right: 24px;
     overflow: hidden;
 }
@@ -76,7 +76,7 @@
     .box-child2-son1{
         height: 10%;
         margin-bottom: 10px;
-        background-color: rgb(110, 122, 105);
+        background-color: rgb(255, 255, 255);
         display: flex;
     }    
 /*右侧盒子下方盒子（输入面板 个人形象）*/
@@ -84,7 +84,7 @@
         display: flex;
         height: 90%;
         margin-bottom: 10px;
-        background-color: rgb(110, 122, 105)
+        background-color: rgb(255, 255, 255)
     }
 
    

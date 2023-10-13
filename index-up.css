@@ -2,8 +2,9 @@
     .search-box{
         width: 70%;
         margin-right: 10px;
-        background-color: rgb(75, 100, 82);
+        background-color: rgb(190, 198, 198);
         display: flex;
+        border-radius: 10px;
     }
         .search{
             margin-top: 20px;
@@ -11,11 +12,13 @@
             margin-left: 50px;
             display: flex;
             width: 400px; 
+            border-radius: 10px;
         }
         .searchInput{
             width: 300px;
             text-align: center;
             font-size: large;
+            border-radius: 10px;
             
         }
         .search-button{
@@ -24,8 +27,9 @@
         
     .userinfo{
         width: 30%;
-        background-color: rgb(75, 100, 82);
+        background-color: rgb(190, 198, 198);
         display: flex; 
+        border-radius: 10px;
     }
         .box-img-dad{
             width: 50%;
