@@ -1,0 +1,117 @@
+/*
+(1)font-weight:字体的粗细程度
+(2)transition: .4s linear .2s
+"transition"是CSS属性，它用于指定元素在改变属性值时的过渡效果。
+".4s"是过渡的持续时间。在这个例子中，过渡将在0.4秒内完成。
+"linear"是过渡的速度曲线。它指定过渡效果以恒定的速度进行，没有加速或减速。
+".2s"是延迟时间。在这个例子中，过渡将在开始之后的0.2秒才开始执行。
+(3)"ease-in-out"使动画具有渐进放慢、中间加速、再渐进放慢的效果。
+(4)"justify-content: space-between" 是一个CSS属性，用于调整flex容器中项目之间的对齐方式和间距。
+*/
+
+.box-child2-son2-son1{
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    margin-right: 1%;
+    display: flex;
+    flex-direction: column;
+}
+    /*上载区域*/
+    .box-grason1{
+        height: 39%;
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        
+    }
+        /*选择框*/
+    .box-grason1-up{
+        width: 45%;
+        background-color: rgb(190, 198, 198);
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+        .box-dropdown-icon{
+            
+            height: 15%;
+            margin-left: 30px;
+            margin-right: 60px;
+            margin-top: 10px;
+            background-color: rgb(89, 156, 137);
+            color: aliceblue;
+            padding-left: 20px;
+            padding-top: 22px;
+            border-radius: 6px;
+            font-size: large;
+            
+        }
+        /*选择列表*/
+        .option-list{
+            
+            margin-top: 10px;
+            margin-left: 30px;
+            background-color: rgb(233, 241, 241);
+            margin-right: 60px;
+            max-height: 120px;
+            overflow-y: auto;
+            transition: .2s linear .2s;
+            padding-left: 20px;
+            height: 0px;
+            
+            
+        }
+        .option-list.active{
+            height: 120px;
+        }
+        .option{
+            padding-top: 8px;
+            transition: .3s ease-in-out;
+        }
+        .option:hover,
+        
+        .option.selected{
+            color: aqua;
+        }
+        .option-list::-webkit-scrollbar{
+            width: 4px;
+        }
+        .option-list::-webkit-scrollbar-thumb{
+            background-color: rgb(40, 189, 197);
+
+        }
+    /*输入+确认框*/
+    .box-grason1-right{
+        width: 55%;
+        background-color: rgb(190, 198, 198);
+        display: flex;
+        border-radius: 10px;
+    }
+    .box-grason1-right-input{
+        width: 70%;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .box-grason1-down-submit-btn{
+        background-color: rgb(190, 198, 198);
+        width: 30%;
+        margin-left: 10px;
+    }
+    .submit-btn{
+        margin-bottom: 10px;
+        margin-top: 200px;
+    }
+    .exp-input{
+        height: 100%;
+        width: 100%;
+        resize: none;
+        font-size: 20px;
+    }
+
+    /*自动生成历程*/
+    .box-grason2{
+        height: 60%;
+        background-color: rgb(190, 198, 198);
+        margin-top: 1%;
+    }
+    

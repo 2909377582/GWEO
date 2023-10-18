@@ -1,0 +1,149 @@
+<!--
+    （1）li标签是HTML中用来创建列表项的标签
+    （2）a标签是用于创建超链接的标签。
+    （3）<ul> 是HTML中用来创建无序列表的标签。
+        无序列表的特点是每个列表项前面有一个圆形或者实心的小圆点，不像有序列表那样按照顺序编号。
+        有默认padding和margin；
+    （4）class用于标识一组元素，id用于唯一标识一个元素，
+    （5）
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!--
+        meta:表示指定配置网页信息
+        name:表示要配置网页的视口属性
+        content:属性用于指定视口的具体配置,这里的配置是"width=device-width, initial-scale=1.0"
+            width=device-width表示网页的宽度应该等于设备的宽度
+            initial-scale=1.0表示网页的初始缩放比例为1.0，即不进行任何缩放。
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李良琦</title>
+    <!--
+        rel:是 HTML 中的一个属性，代表 "relationship"（关系）的缩写
+            "rel" 的值是 "stylesheet"，表示链接是一个样式表文件，用于定义文档的外观和样式。
+    -->
+
+<body class="container">
+    <!--左边的盒子-->
+    <div class="box-child1">
+        <div class="box-child1-son1">
+        <ul class="sidebar">
+        <li class="nav-item">
+            <a href="index.html">首页</a></li>
+        <li class="nav-item">历程</li>
+        <li class="nav-item">经验上载</li>
+        </ul>
+        </div>
+    </div>
+    <!--右边的盒子-->
+    <div class="box-child2">
+        <!--上方的盒子-->
+        <div class="box-child2-son1">
+            <div class="search-box">
+            <!--
+            <form> 元素是整个表单的容器。它定义了用户输入数据的提交方式和目标URL。
+              action 属性：action 属性指定了表单数据提交的目标URL。
+              当用户提交表单时，浏览器会将数据发送到指定的URL。
+              例如：<form action="/submit" method="POST">，表单数据将发送到 "/submit" 地址。
+              method 属性：method 属性定义了提交数据时使用的HTTP请求方法。
+              最常见的两个方法是 "GET" 和 "POST"。
+                "GET"：将表单数据附加到URL，适用于不涉及敏感信息的查询。
+                数据会显示在URL中，可见性较高。
+                "POST"：将表单数据作为HTTP请求的一部分发送，适用于包含敏感信息的情况。
+                数据不会显示在URL中，可见性较低。
+            <label> 元素用于创建标签文本，用于标识输入字段的用途。在这里，它显示为 "Search:"。
+            <input> 元素定义了实际的输入字段。它的 type 属性设置为 "search"，表示这是一个搜索输入框。
+            id 属性用于唯一标识这个输入框，name 属性为该字段定义了一个名称 "q"，以便在提交时识别这个字段。
+            placeholder 属性提供了在输入框内的默认提示文本 。    
+            -->
+            <!--输入框-->
+                <div class="search">
+                    <input type="search" id="searchInput" name="q" placeholder="search now" class="searchInput">
+            <!--输入按钮-->
+                    <a class="search-button">
+                    <i class="bi bi-search" style="font-size: 2.5rem;color:
+                     aquamarine; cursor: pointer;"></i>
+                    </a>
+                </div>
+            </div>
+            <!--用户信息-->
+            <div class="userinfo">
+                <div class="box-img-dad">
+                <!--头像-->
+                <div class="box-img">
+                    <img src="\icons\gweo.jpg" alt="face" class="img">
+                    </div>
+                </div>
+                <div class="box-log-dad">
+                    <!--登录按钮-->
+                    <button class="box-log">LOG</button>
+                </div>
+            </div>
+        
+        </div>
+        <!--下方的盒子-->
+        <div class="box-child2-son2">
+            <!--子集盒子-->
+            <div class="box-child2-son2-son1">
+            <div class="box-grason1">
+                <!--选择框-->
+                <div class="box-grason1-up" style="display: flex;flex-direction: column;">
+                    <div class="box-dropdown-icon" >
+                        <span class="dropdown-icon" id="box-dropdown-icon">请选择上载领域</span>
+                        <i class="bi bi-chevron-down" style="font-size: 1.6rem;float: right;"></i>
+                    </div>
+                    <div class="option-list">
+                        <div class="option">学习</div>
+                        <div class="option">生活</div>
+                        <div class="option">足球</div>
+                        <div class="option">足球</div>
+                        <div class="option">足球</div>
+                        <div class="option">足球</div>
+                        <div class="option">足球</div>
+                        <div class="option">足球</div>
+                    </div>
+                    
+                </div>
+                <!--输入框 确认按钮-->
+                <div class="box-grason1-right">
+                    <!--输入框-->
+                    <div class="box-grason1-right-input">
+                    <!--rows属性指定了文本框的行数，cols属性指定了文本框的列数。-->
+                    <textarea name="exp-input1" id="exp-input" class="exp-input" ></textarea>
+                    </div>
+                    <!--确认按钮-->
+                    <div class="box-grason1-down-submit-btn">
+                        <button class="submit-btn" id="submit-btn"  >确认上载</button>
+                    </div>
+                </div>
+                
+                </div>
+                
+                <div class="box-grason2">自动生成历程</div> 
+            </div>  
+            <div class="box-child2-son2-son2">放一个动漫形象</div>
+            </div>
+        </div>
+    </div>
+     <!--
+    npm包下载bootstrap-icons库以后可以把库搬过来用    
+    -->
+    <link rel="stylesheet" href="\bootstrap-icons/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="\css\index.css">
+    <link rel="stylesheet" href="\css\index-down.css">
+    <link rel="stylesheet" href="\css\index-up.css">
+    <link rel="stylesheet" href="\css\index-left.css">
+    <link rel="stylesheet" href="\css\index-right.css">
+
+
+
+
+
+</body>
+</html>
+<script src="\js\upload.js"></script>
+<script src="\js\index.js"></script>
+
