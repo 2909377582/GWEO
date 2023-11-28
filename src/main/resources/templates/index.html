@@ -11,6 +11,8 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="data:,">
+
     <!--
         meta:表示指定配置网页信息
         name:表示要配置网页的视口属性
@@ -56,7 +58,7 @@
             <label> 元素用于创建标签文本，用于标识输入字段的用途。在这里，它显示为 "Search:"。
             <input> 元素定义了实际的输入字段。它的 type 属性设置为 "search"，表示这是一个搜索输入框。
             id 属性用于唯一标识这个输入框，name 属性为该字段定义了一个名称 "q"，以便在提交时识别这个字段。
-            placeholder 属性提供了在输入框内的默认提示文本 。    
+            placeholder 属性提供了在输入框内的默认提示文本 。
             -->
             <!--输入框-->
                 <div class="search">
@@ -81,7 +83,7 @@
                     <button class="box-log">LOG</button>
                 </div>
             </div>
-        
+
         </div>
         <!--下方的盒子-->
         <div class="box-child2-son2">
@@ -104,7 +106,7 @@
                         <div class="option">足球</div>
                         <div class="option">足球</div>
                     </div>
-                    
+
                 </div>
                 <!--输入框 确认按钮-->
                 <div class="box-grason1-right">
@@ -118,17 +120,22 @@
                         <button class="submit-btn" id="submit-btn"  >确认上载</button>
                     </div>
                 </div>
-                
                 </div>
-                
-                <div class="box-grason2">自动生成历程</div> 
-            </div>  
+                <!--生成历程盒子-->
+                <div class="box-grason2">
+                    <div class="time-line">
+                        <!--<span>标签是HTML中的一个行内元素，用于在文本中包裹一小段内容，以便对其进行样式、控制和标记-->
+                        <p><span id="date"></span><span id="uploader"></span>上载了<span id="upload_domain"></span>领域的<span id="load_content"></span></p>
+
+                    </div>
+                </div>
+            </div>
             <div class="box-child2-son2-son2">放一个动漫形象</div>
             </div>
         </div>
     </div>
      <!--
-    npm包下载bootstrap-icons库以后可以把库搬过来用    
+    npm包下载bootstrap-icons库以后可以把库搬过来用
     -->
     <link rel="stylesheet" href="\bootstrap-icons/font/bootstrap-icons.css">
 
@@ -146,4 +153,5 @@
 </html>
 <script src="\js\upload.js"></script>
 <script src="\js\index.js"></script>
+<script src="\js\websocket.js"></script>
 
