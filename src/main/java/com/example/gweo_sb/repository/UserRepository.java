@@ -19,6 +19,5 @@ public interface UserRepository extends CrudRepository<User, Long> {
     // 您可以在这里添加自定义的查询方法
     //对User这个实体（映射为数据库中的表）进行一个查询（查询内容为最后一行内容）
     //这个方法的作用是查询数据库中 User 表中按照 id 字段降序排列的第一条记录，并返回相应的 User 实体对象。这样的查询通常用于获取表中的最新记录。
-    User findTopByOrderByIdDesc();
 }
 

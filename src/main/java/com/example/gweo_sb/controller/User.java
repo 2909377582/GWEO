@@ -48,6 +48,8 @@ public class User {
         return load_Content;
     }
 // 构造函数、Getter和Setter方法
+    public String upload_time;
+    public  String getUpload_time(){return upload_time;}
 }
 
 

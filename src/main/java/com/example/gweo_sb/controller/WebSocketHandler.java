@@ -16,11 +16,11 @@ public class WebSocketHandler extends TextWebSocketHandler {
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
         // 处理收到的消息
         String payload = message.getPayload();
+        //控制台打印
         System.out.println("Received message from client: " + payload);
 
-        // 发送消息给客户端
-        String replyMessage = "Hello, client! You said: " + payload;
-        session.sendMessage(new TextMessage(replyMessage));
+        // 发送消息给客户端（发送了一个字符串）
+        session.sendMessage(new TextMessage(message.getPayload()));
         // 可以根据需要重写其他方法来处理连接的打开、关闭等事件。
     }
 }
